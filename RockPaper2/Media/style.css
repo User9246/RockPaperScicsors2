@@ -17,12 +17,17 @@ h1, h2 {
 button {
     font-family: FuturaT;
     font-size: 80%;
-    width: 2rem;
-    height: 1rem;
+    width: 6rem;
+    height: 1.5rem;
     border-style: none;
+    border-radius: 0.3rem;
     background-color: #0089e4;
 }
 
 button:hover{
+    background-color: #52a3ff;
+}
+
+button:active{
     background-color: #006ae4;
 }

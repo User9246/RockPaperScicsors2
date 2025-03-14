@@ -3,15 +3,8 @@ const CompOutputText = document.getElementById("ComputerOutput");
 
 function CreateMatch(PlayerInput){
     ComputerChoice = Math.floor(Math.random() * 3);
-    switch(ComputerChoice){
-        case 0:
-            CompOutputText.textContent = "Computer: Rock";
-            break;
-        case 1:
-            CompOutputText.textContent = "Computer: Paper";
-            break;
-        case 2:
-            CompOutputText.textContent = "Computer: Scissors";
-            break;
+
+    if(PlayerInput == `Rock` && ComputerChoice == 0 || PlayerInput == `Paper` && ComputerChoice == 1 || PlayerInput == `scissors` && ComputerChoice == 2){
+        CompOutputText.textContent = "Computer: Tie!";
     }
 }
