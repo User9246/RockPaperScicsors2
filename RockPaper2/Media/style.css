@@ -4,7 +4,7 @@
 }
 
 :root {
-    background: linear-gradient(#5e0d94, #6565ffbd);
+    background: linear-gradient(#5e0d94, #6262e2);
     background-attachment: fixed ;
     background-repeat: no-repeat;
 }
@@ -30,4 +30,14 @@ button:hover{
 
 button:active{
     background-color: #006ae4;
+    color: white;
+}
+
+#Shoot {
+    margin-top: 0.3rem;
+    width: 18rem;
+}
+
+#WinStatus {
+    font-size: 1rem;
 }

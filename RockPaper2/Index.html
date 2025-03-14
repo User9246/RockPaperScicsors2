@@ -8,12 +8,15 @@
         <center>
             <h1>Pick an option</h1>
             <h2 id="ComputerOutput">No input yet...</h2>
-            <button onclick="CreateMatch(`Rock`)">Rock</button>
-            <button onclick="CreateMatch(`Paper`)">Paper</button>
-            <button onclick="CreateMatch(`Scissors`)">Scissors</button>
-            <button onclick="CreateMatch(`Shoot`)">Shoot...</button>  
+            <h2 id="WinStatus"></h2>
+            <div id="UserButtonInput">
+                <button onclick="CreateMatch(`Rock`)">Rock</button>
+                <button onclick="CreateMatch(`Paper`)">Paper</button>
+                <button onclick="CreateMatch(`Scissors`)">Scissors</button>
+                <br>
+                <button onclick="CreateMatch(`Shoot`)" id="Shoot">Shoot...</button>  
+            </div>
         </center>
-        
     </body>
     <script src="Media/RockPaperScissors.js"></script>
 </html>
