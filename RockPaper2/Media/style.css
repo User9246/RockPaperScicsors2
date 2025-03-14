@@ -1,0 +1,10 @@
+@font-face{
+    font-family: FuturaT;
+    src: url(Fonts/FuturaT_Bold.ttf)
+}
+
+:root {
+    background: linear-gradient(#6565ffbd, #5e0d94);
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+}
