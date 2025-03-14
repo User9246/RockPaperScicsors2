@@ -5,11 +5,15 @@
         <title>Test2</title>
     </head>
     <body>
-        <h1>Pick an option</h1>
-        <h2>No input yet...</h2>
-        <button id="Rock">Rock</button>
-        <button id="Paper">Paper</button>
-        <button id="Scissors">scissors</button>
-        <button id="Shoot">Shoot...</button>
+        <center>
+            <h1>Pick an option</h1>
+            <h2 id="ComputerOutput">No input yet...</h2>
+            <button onclick="CreateMatch(`Rock`)">Rock</button>
+            <button onclick="CreateMatch(`Paper`)">Paper</button>
+            <button onclick="CreateMatch(`Scissors`)">Scissors</button>
+            <button onclick="CreateMatch(`Shoot`)">Shoot...</button>  
+        </center>
+        
     </body>
+    <script src="Media/RockPaperScissors.js"></script>
 </html>

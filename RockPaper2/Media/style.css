@@ -4,7 +4,25 @@
 }
 
 :root {
-    background: linear-gradient(#6565ffbd, #5e0d94);
+    background: linear-gradient(#5e0d94, #6565ffbd);
     background-attachment: fixed ;
     background-repeat: no-repeat;
+}
+
+h1, h2 {
+    font-family: FuturaT;
+    color: white;
+}
+
+button {
+    font-family: FuturaT;
+    font-size: 80%;
+    width: 2rem;
+    height: 1rem;
+    border-style: none;
+    background-color: #0089e4;
+}
+
+button:hover{
+    background-color: #006ae4;
 }
