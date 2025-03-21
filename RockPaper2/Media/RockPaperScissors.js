@@ -50,7 +50,7 @@ function CreateMatch(PlayerInput){
         GameOps.GameWins += 1;
     }
     else{
-        CompOutputText = "[ERROR]"
+        CompOutputText.textContent = "[ERROR]"
     }
     WinStatusText.textContent = `${GameOps.GameWins} Wins, ${GameOps.GameTies} Ties, ${GameOps.GameLose} Loses`;
 }
