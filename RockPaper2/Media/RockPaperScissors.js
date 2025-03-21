@@ -2,9 +2,9 @@
 const CompOutputText = document.getElementById("ComputerOutput");
 let ComputerChoice;
 let ComputerChoiceString;
-let GameTies;
-let GameLose;
-let GameWin;
+let GameOps = {
+    
+}
 
 function CreateMatch(PlayerInput){
     ComputerChoice = Math.floor(Math.random() * 3);
