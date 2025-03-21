@@ -42,11 +42,11 @@ function CreateMatch(PlayerInput){
     };
     console.log(GameInfo);
     console.log(GameOps);
-    WinStatusText.textContent = `^${PlayerInput}^`;
+    PlayerForwardInputText.textContent = `^${PlayerInput}^`;
     
     if(ComputerChoice == "rock" && PlayerInput == "Paper" || PlayerInput == "Shoot"){
         //Players wins game
-        CompOutputText = `Computer: ${ComputerChoiceString}`;
+        CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
     }
     else{
