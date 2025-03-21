@@ -20,16 +20,16 @@ function CreateMatch(PlayerInput){
 
     switch (ComputerChoice){
         case 0:
-            ComputerChoiceString = "rock";
+            ComputerChoiceString = "Rock";
             break;
         case 1:
-            ComputerChoiceString = "paper";
+            ComputerChoiceString = "Paper";
             break;
         case 2:
-            ComputerChoiceString = "scissors";
+            ComputerChoiceString = "Scissors";
             break;
         case 3:
-            ComputerChoiceString = "shoot";
+            ComputerChoiceString = "Shoot";
         default:
             ComputerChoiceString = "[ERROR]";
             console.log("ComputerChoiceString SWITCH, is the index out of rage?");
@@ -44,23 +44,30 @@ function CreateMatch(PlayerInput){
     console.log(GameOps);
     PlayerForwardInputText.textContent = `^${PlayerInput}^`;
     
-    if(ComputerChoice == "rock" && PlayerInput == "Paper" || PlayerInput == "Shoot"){
+    if(ComputerChoice == "Rock" && PlayerInput == "Paper" || PlayerInput == "Shoot"){
         //Players wins game
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
     }
-    else if(ComputerChoice == "paper" && PlayerInput == "Scissors" || PlayerInput == "Shoot"){
+    else if(ComputerChoice == "Paper" && PlayerInput == "Scissors" || PlayerInput == "Shoot"){
         //Players wins game
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
     }
-    else if(ComputerChoice == "scissors" && PlayerInput == "Rock" || PlayerInput == "Shoot"){
+    else if(ComputerChoice == "Scissors" && PlayerInput == "Rock" || PlayerInput == "Shoot"){
         //Players wins game
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
+    }
+    else if(ComputerChoice == PlayerInput){
+        //Tie game
+        CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
+        GameOps.GameTies += 1;
     }
     else{
-        CompOutputText.textContent = "[ERROR]"
+        //COMPUTER wins
+        CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
+        GameOps.GameLose += 1;
     }
     WinStatusText.textContent = `${GameOps.GameWins} Wins, ${GameOps.GameTies} Ties, ${GameOps.GameLose} Loses`;
 }
