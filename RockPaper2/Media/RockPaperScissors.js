@@ -49,6 +49,16 @@ function CreateMatch(PlayerInput){
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
     }
+    else if(ComputerChoice == "paper" && PlayerInput == "Scissors" || PlayerInput == "Shoot"){
+        //Players wins game
+        CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
+        GameOps.GameWins += 1;
+    }
+    else if(ComputerChoice == "scissors" && PlayerInput == "Rock" || PlayerInput == "Shoot"){
+        //Players wins game
+        CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
+        GameOps.GameWins += 1;
+    }
     else{
         CompOutputText.textContent = "[ERROR]"
     }
