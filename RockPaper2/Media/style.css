@@ -39,6 +39,6 @@ button:active{
     width: 60rem;
 }
 
-#WinStatus {
+#WinStatus, #PlayerForwardInput {
     font-size: 2rem;
 }
