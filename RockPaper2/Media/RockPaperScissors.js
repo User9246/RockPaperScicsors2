@@ -44,17 +44,17 @@ function CreateMatch(PlayerInput){
     console.log(GameOps);
     PlayerForwardInputText.textContent = `^${PlayerInput}^`;
     
-    if(ComputerChoice == "Rock" && PlayerInput == "Paper" || PlayerInput == "Shoot"){
+    if(ComputerChoice == "Rock" && (PlayerInput == "Paper" || PlayerInput == "Shoot")){
         //Players wins game
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
     }
-    else if(ComputerChoice == "Paper" && PlayerInput == "Scissors" || PlayerInput == "Shoot"){
+    else if(ComputerChoice == "Paper" && (PlayerInput == "Scissors" || PlayerInput == "Shoot")){
         //Players wins game
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
     }
-    else if(ComputerChoice == "Scissors" && PlayerInput == "Rock" || PlayerInput == "Shoot"){
+    else if(ComputerChoice == "Scissors" && (PlayerInput == "Rock" || PlayerInput == "Shoot")){
         //Players wins game
         CompOutputText.textContent = `Computer: ${ComputerChoiceString}`;
         GameOps.GameWins += 1;
