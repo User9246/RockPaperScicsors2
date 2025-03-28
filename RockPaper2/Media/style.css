@@ -42,3 +42,7 @@ button:active{
 #WinStatus, #PlayerForwardInput {
     font-size: 2rem;
 }
+
+#RPSButton {
+    user-select: none;
+}
