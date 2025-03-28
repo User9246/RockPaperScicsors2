@@ -26,10 +26,12 @@ button {
 }
 
 button:hover{
+    transition: 0.1;
     background-color: #52a3ff;
 }
 
 button:active{
+    transition: 0.1;
     background-color: #006ae4;
     color: white;
 }
